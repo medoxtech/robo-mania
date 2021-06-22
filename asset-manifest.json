@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/robo-mania/static/css/main.9931e26d.chunk.css",
+    "main.js": "/robo-mania/static/js/main.b124f370.chunk.js",
+    "main.js.map": "/robo-mania/static/js/main.b124f370.chunk.js.map",
+    "runtime-main.js": "/robo-mania/static/js/runtime-main.dac9469c.js",
+    "runtime-main.js.map": "/robo-mania/static/js/runtime-main.dac9469c.js.map",
+    "static/js/2.4803f186.chunk.js": "/robo-mania/static/js/2.4803f186.chunk.js",
+    "static/js/2.4803f186.chunk.js.map": "/robo-mania/static/js/2.4803f186.chunk.js.map",
+    "static/js/3.32ebbd2c.chunk.js": "/robo-mania/static/js/3.32ebbd2c.chunk.js",
+    "static/js/3.32ebbd2c.chunk.js.map": "/robo-mania/static/js/3.32ebbd2c.chunk.js.map",
+    "index.html": "/robo-mania/index.html",
+    "static/css/main.9931e26d.chunk.css.map": "/robo-mania/static/css/main.9931e26d.chunk.css.map",
+    "static/js/2.4803f186.chunk.js.LICENSE.txt": "/robo-mania/static/js/2.4803f186.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.dac9469c.js",
+    "static/js/2.4803f186.chunk.js",
+    "static/css/main.9931e26d.chunk.css",
+    "static/js/main.b124f370.chunk.js"
+  ]
+}
