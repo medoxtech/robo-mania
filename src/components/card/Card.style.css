@@ -1,0 +1,28 @@
+.card {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	border-radius: 1em;
+	background-color: #e9c46a;
+	overflow: hidden;
+	transition: transform 0.9s;
+}
+
+.card:hover {
+	transform: scale(1.05);
+}
+
+.card h3 {
+	font-size: 2em;
+}
+
+.card h4 {
+	font-size: 1.5em;
+}
+
+.card img {
+	background: linear-gradient(to Top, #e9c46a, #f4a261);
+	width: 100%;
+	border: 1px solid #26465340;
+}

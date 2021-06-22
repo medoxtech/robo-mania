@@ -1,25 +1,41 @@
-import logo from './logo.svg';
-import './App.css';
+import { Component } from "react";
+import "./App.css";
+import CardList from "./components/card-list/CardList";
+import SearchBox from "./components/searchbox/SearchBox";
+class App extends Component {
+	constructor() {
+		super();
+		this.state = {
+			objs: [],
+			searchField: "",
+		};
+	}
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	componentDidMount() {
+		fetch("https://jsonplaceholder.typicode.com/users")
+			.then((response) => response.json())
+			.then((data) =>
+				this.setState({
+					objs: data,
+				})
+			);
+	}
+
+	searchObj = (e) => {
+		this.setState({
+			searchField: e.target.value,
+		});
+	};
+
+	render() {
+		return (
+			<div className="App">
+				<h1>Robots</h1>
+				<SearchBox searchObj={this.searchObj} />
+				<CardList objs={this.state.objs} searchField={this.state.searchField} />
+			</div>
+		);
+	}
 }
 
 export default App;
